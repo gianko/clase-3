@@ -9,5 +9,8 @@
   },
   "keywords": [],
   "author": "Gian F. Olivieri",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.29.0"
+  }
 }
