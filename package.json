@@ -1,0 +1,13 @@
+{
+  "name": "clase-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel serve index.html",
+    "build": "parcel index.html"
+  },
+  "keywords": [],
+  "author": "Gian F. Olivieri",
+  "license": "ISC"
+}
