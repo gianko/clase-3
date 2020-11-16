@@ -1,5 +1,124 @@
 @import 'normalize.css';
+@import './variables';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html {
-  background-color: green;
+  background-color: $dark_blue;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hide-for-desktop {
+  display: none;
+  @media ($desktop) {
+    display: block;
+  }
+}
+.big-desktop-only {
+  display: none;
+  @media ($big-desktop) {
+    display: block;
+  }
+}
+.heavy-white-font {
+  font-weight: 700;
+  color: white;
+}
+svg {
+  fill: currentColor;
+}
+
+.main {
+
+}
+
+.slogan {
+  @extend .heavy-white-font;
+  font-size: 30px;
+  line-height: 2 * $spacing;
+  margin: 0;
+  margin-top: $spacing;
+}
+.join-title {
+  @extend .heavy-white-font;
+  font-size: 15px;
+  margin: 3 * $spacing 0 15px;
+}
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $spacing;
+}
+.top {
+}
+.middle {
+ background-color: $lighter_blue;
+  justify-content: center;
+  align-items: center;
+  padding: $spacing;
+  position: relative;
+  overflow: hidden;
+
+  .panel {
+    position: relative;
+    padding: $spacing 0;
+  }
+
+  .bg {
+    color: $light_blue;
+    position: absolute;
+    width: 80%;
+    top: -50%;
+    right: -20%;
+    z-index: 0;
+  }
+}
+.middle-text {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 2 * $spacing;
+
+  .icon {
+   width: 30px;
+   display: block;
+   margin-right: $spacing;
+   color: white;
+  }
+  .text {
+    @extend .heavy-white-font;
+    font-size: 19px;
+    line-height: 30px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.panel {
+  width: 380px;
+  max-width: 380px;
+}
+.button {
+  @extend .heavy-white-font;
+  border-radius: $spacing;
+  font-size: 15px;
+  width: 100%;
+  display: block;
+  min-height: 2 * $spacing;
+  text-align: center;
+  line-height: 2 * $spacing;
+  text-decoration: none;
+  margin-bottom: 15px;
+  background-color: $light_blue;
+
+  &.bordered {
+    border: 1px solid $light_blue;
+    background-color: $dark_blue;
+    color: $light_blue;
+  }
+}
+.logo {
+  color: white;
+  width: 42px;
 }
