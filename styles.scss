@@ -8,9 +8,11 @@ html {
 }
 
 .hide-for-desktop {
-  display: none;
+  display: flex;
+  justify-content: center;
+
   @media ($desktop) {
-    display: block;
+    display: none;
   }
 }
 .big-desktop-only {
@@ -121,4 +123,30 @@ svg {
 .logo {
   color: white;
   width: 42px;
+}
+
+.mobile-buttons {
+  width: 380px;
+  padding: 2 * $spacing $spacing 30px;
+  display: flex;
+  justify-content: space-between;
+
+  .button {
+    width: 180px;
+    margin: 0;
+  }
+}
+
+.footer {}
+.nav {
+  padding: 0.5 * $spacing $spacing;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  a, span {
+    color: $grey;
+    font-size: 13px;
+    margin: 0 10px 15px;
+  }
 }
