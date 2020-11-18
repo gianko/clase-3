@@ -6,6 +6,14 @@ html {
   background-color: $dark_blue;
   font-family: 'Roboto', sans-serif;
 }
+html, body {
+  height: 100%;
+  justify-content: s;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
 
 .hide-for-desktop {
   display: flex;
@@ -19,8 +27,74 @@ html {
   display: none;
   @media ($big-desktop) {
     display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
   }
 }
+.form {
+  padding: $spacing;
+  display: flex;
+  justify-content: center;
+
+  .button {
+    width: auto;
+    height: 37px;
+    white-space: nowrap;
+    padding: 0 10px;
+    margin-top: 10px;
+  }
+
+  .input-wrapper {
+    width: 225px;
+    flex-shrink: 1;
+    margin-right: 15px;
+  }
+  .input-inner {
+    background-color: #192734;
+    border-bottom: 2px solid $grey;
+    border-radius: 2px;
+  }
+  .label {
+    display: block;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: $grey;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .input {
+    background-color: transparent;
+    display: block;
+    width: calc(100% - 20px);
+    border: 0;
+    color: white;
+    padding: 5px 10px;
+    font-size: 18px;
+  }
+  .link {
+    color: $light_blue;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 8px 10px;
+    display: block;
+
+    :hover {
+      text-decoration: underline;
+    }
+  }
+
+  :hover {
+    .label {
+      color: $light_blue;
+    }
+    .input-inner {
+      border-color: $light_blue;
+    }
+  }
+}
+
 .heavy-white-font {
   font-weight: 700;
   color: white;
@@ -30,7 +104,20 @@ svg {
 }
 
 .main {
+  @media ($desktop) {
+    display: flex;
+    flex: 1;
 
+    .block {
+      width: 50%;
+      // flex: 1;
+
+      &.top {
+        position: relative;
+        order: 1;
+      }
+    }
+  }
 }
 
 .slogan {
@@ -73,6 +160,12 @@ svg {
     top: -50%;
     right: -20%;
     z-index: 0;
+
+    @media ($desktop) {
+      width: 180%;
+      top: -30%;
+      right: -50%;
+    }
   }
 }
 .middle-text {
@@ -136,10 +229,10 @@ svg {
     margin: 0;
   }
 }
-
-.footer {}
+.footer {
+}
 .nav {
-  padding: 0.5 * $spacing $spacing;
+  padding: $spacing $spacing;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -147,6 +240,6 @@ svg {
   a, span {
     color: $grey;
     font-size: 13px;
-    margin: 0 10px 15px;
+    margin: 7px 10px 7px;
   }
 }
