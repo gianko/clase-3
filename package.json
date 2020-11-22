@@ -1,7 +1,6 @@
 {
   "name": "clase-3",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "parcel serve index.html",
@@ -15,5 +14,14 @@
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gianko/clase-3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gianko/clase-3/issues"
+  },
+  "homepage": "https://github.com/gianko/clase-3#readme",
+  "description": ""
 }

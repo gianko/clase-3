@@ -1,5 +1,153 @@
 @import "normalize.css";
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 
-html {
-  background-color: rgb(212, 0, 255);
+  font-family: "Roboto", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+}
+.main {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+}
+.izquierda {
+  background-color: #71c9f8;
+  color: white;
+  padding: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.login {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+.username,
+.contraseña {
+  display: flex;
+  flex-direction: column;
+}
+.usame {
+  font-size: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 50pt;
+  font-weight: bold;
+}
+.case {
+  width: auto;
+  border: none;
+  background: rgba(158, 154, 154, 0.241);
+  border-bottom: 1px solid #1da1f2;
+  outline: none;
+  height: 40px;
+  color: rgb(226, 232, 232);
+  font-size: 0.8em;
+}
+.medio {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.unete {
+  font-weight: bold;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+  text-align: start;
+  font-size: 2rem;
+}
+
+.main h1 {
+  font-size: 2rem;
+  text-align: start;
+}
+.unete input {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #1da1f2;
+  border-color: #1da1f2;
+  outline: none;
+  height: 40px;
+  background: transparent;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.pajarito {
+  display: flex;
+
+  align-self: flex-start;
+}
+.main h1,
+.pajarito {
+  font-weight: bold;
+  display: inline-flex;
+  flex-direction: column;
+  margin: 50px 50px auto 50px;
+}
+
+.bottom {
+  margin-top: 15px;
+  color: #71c9f8;
+  border-color: #1da1f2;
+  outline: none;
+  height: 40px;
+  background-color: transparent;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.izq {
+  margin-top: 40px;
+  margin-right: 20px;
+  display: flex;
+  align-content: center;
+  line-height: 50pt;
+}
+.derecha {
+  color: aliceblue;
+  background-color: #15202b;
+  padding: 20px;
+  width: 50%;
+}
+
+.pie {
+  text-align: center;
+  background-color: #15202b;
+  color: white;
+  padding: 20px;
+  font-size: 0.7rem;
+}
+.pie a {
+  margin: 2px;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #8899a6;
+}
+.pie a:hover {
+  color: white;
+}
+.contraseña a:hover {
+  color: white;
+}
+.olvidala {
+  color: #8899a6;
+}
+.regis {
+  background-color: #1da1f2;
 }
