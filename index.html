@@ -11,34 +11,38 @@
     <div class="izquierda">
 
       <ul class="usame">
-        <div class="izq">
-        <img src="/imagenes/lupa.png" width="30" height="30">
-        <li>Sigue lo que te interesa</li>
-      </div>
-       <div class="izq">
-        <img src="/imagenes/silueta-de-multiples-usuarios.png" width="30" height="30">
-        <li>Entereta de que esta hablando la gente</li>
-       </div>
-      <div class="izq">
-        <img src="/imagenes/conversacion.png" width="30" height="30">
-        <li>Unete a la conversacion</li>
-      </div>
+        <li class="izq">
+          <img src="/imagenes/lupa.png" width="30" height="30">
+          Sigue lo que te interesa
+        </li>
+        <li class="izq">
+          <img src="/imagenes/silueta-de-multiples-usuarios.png" width="30" height="30">
+          Entereta de que esta hablando la gente
+        </li>
+        <li class="izq">
+          <img src="/imagenes/conversacion.png" width="30" height="30">
+          Unete a la conversacion
+        </li>
       </ul>
     </div>
     <div class="derecha">
       <!--login-->
-      <div class="login">
-        <div class="username">
-      <label for="username" >Telefono, correo o usuario</label>
-      <input type="text" class="case">
+      <form class="login">
+        <div class="caja">
+          <div class="input username">
+            <label for="username">Telefono, correo o usuario</label>
+            <input type="text" class="case">
+          </div>
         </div>
-      <div class="contraseña">
-    <label for="Password">Password</label>
-    <input type="password"class="case">
-    <a href="abaout.html" class="olvidala">¿Olvidaste tu contraseña?</a>
-      </div>
-    <input type="submit" value="Iniciar sesion" class="bottom" >
-      </div>
+        <div class="caja">
+          <div class="input contraseña">
+            <label for="Password">Password</label>
+            <input type="password"class="case">
+          </div>
+          <a href="abaout.html" class="olvidala">¿Olvidaste tu contraseña?</a>
+        </div>
+        <button class="boton">Iniciar sesión</button>
+      </form>
     <div class="medio">
       <div>
       <img src="/imagenes/gorjeo.png" width="40" height="40" class="pajarito">
@@ -46,8 +50,8 @@
       </div>
     <div class="unete">
       <p class="letra">Unete a twittaa hoy mismo.</p>
-      <input type="submit" value="Registrate" class="regis">
-      <input type="submit" value="Iniciar sesion">
+      <a href="#" class="link boton boton-primario">Registrate</a>
+      <a href="#" class="link boton">Inicia Sesión</a>
     </div>
       </div>
       </div>

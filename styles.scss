@@ -6,7 +6,6 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-
   font-family: "Roboto", sans-serif;
 }
 body {
@@ -34,24 +33,41 @@ body {
   font-size: 1em;
   margin: 0;
   padding: 0;
-}
-.username,
-.contraseña {
-  display: flex;
-  flex-direction: column;
+
+  .caja {
+
+    .input {
+        border-radius: 2px;
+        padding: 5px;
+        padding-bottom: 0;
+        background: rgba(158, 154, 154, 0.241);;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid #1da1f2;
+        margin-bottom: 8px;
+
+        .case {
+            border: none;
+            background: transparent;
+            font-size: 18px;
+        }
+    }
+
+    .olvidala {
+        padding: 0 5px;
+    }
+  }
 }
 .usame {
-  font-size: 1.7rem;
+  font-size: 19px;
   display: flex;
   flex-direction: column;
-  line-height: 50pt;
   font-weight: bold;
   list-style: none;
 }
-.case {
+._case {
   width: auto;
   border: none;
-  background: rgba(158, 154, 154, 0.241);
   border-bottom: 1px solid #1da1f2;
   outline: none;
   height: 40px;
@@ -105,22 +121,38 @@ body {
   margin: 50px 50px auto 50px;
 }
 
-.bottom {
+.boton {
   margin-top: 15px;
   color: #71c9f8;
-  border-color: #1da1f2;
+  border: 1px #1da1f2 solid;
   outline: none;
   height: 40px;
   background-color: transparent;
   font-size: 18px;
   border-radius: 20px;
+  padding: 0 16px;
+
+  &.boton-primario {
+      background-color: #1da1f2;
+      color: white;
+  }
+}
+
+
+.link {
+    text-decoration: none;
+    line-height: 40px;
+    text-align: center;
 }
 .izq {
   margin-top: 40px;
   margin-right: 20px;
   display: flex;
-  align-content: center;
-  line-height: 50pt;
+  align-items: center;
+
+  img {
+      margin-right: 20px;
+  }
 }
 .derecha {
   color: aliceblue;
