@@ -22,9 +22,16 @@ $margin: 10px;
     fill: white;
 }
 
+.logos2 {
+    background-color: white;
+}
+
 .base  {
     color: white;
+    display: block;
+    width: 100%;
     padding: 50px;
+    margin: 0px;
 }
 
 .boton  {
@@ -37,5 +44,5 @@ $margin: 10px;
 .pie    {
     align-content: center;  
     flex: 1;
-    margin: 30px;
+    margin: 0px;
 }
