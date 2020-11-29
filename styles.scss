@@ -1,5 +1,6 @@
 @import "normalize.css";
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url(/_telefono.scss);
 
 html,
 body {
@@ -8,10 +9,10 @@ body {
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
+
 body {
   display: flex;
   flex-direction: column;
-  background-color: red;
 }
 .main {
   display: flex;
@@ -35,26 +36,26 @@ body {
   padding: 0;
 
   .caja {
-
     .input {
-        border-radius: 2px;
-        padding: 5px;
-        padding-bottom: 0;
-        background: rgba(158, 154, 154, 0.241);;
-        display: flex;
-        flex-direction: column;
-        border-bottom: 2px solid #1da1f2;
-        margin-bottom: 8px;
+      border-radius: 2px;
+      padding: 10px;
+      padding-bottom: 0;
+      background: rgba(214, 207, 207, 0.303);
+      display: flex;
+      flex-direction: column;
+      border-bottom: 2px solid #657480;
+      margin-bottom: 8px;
 
-        .case {
-            border: none;
-            background: transparent;
-            font-size: 18px;
-        }
+      .case {
+        border: none;
+        background: transparent;
+        font-size: 18px;
+      }
     }
 
     .olvidala {
-        padding: 0 5px;
+      padding: 0 5px;
+      text-decoration: none;
     }
   }
 }
@@ -65,17 +66,26 @@ body {
   font-weight: bold;
   list-style: none;
 }
+.iconito svg {
+  fill: currentColor;
+  stroke: currentColor;
+}
+.iconito {
+  margin-right: 20px;
+  color: white;
+}
+
 ._case {
   width: auto;
   border: none;
   border-bottom: 1px solid #1da1f2;
   outline: none;
   height: 40px;
-  color: rgb(226, 232, 232);
+  color: gray;
   font-size: 0.8em;
 }
 .medio {
-  font-size: 1.5rem;
+  font-size: 1.5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,7 +93,7 @@ body {
 }
 .unete {
   font-weight: bold;
-  margin-top: 40px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -91,7 +101,6 @@ body {
   text-align: start;
   font-size: 2rem;
 }
-
 .main h1 {
   font-size: 2rem;
   text-align: start;
@@ -110,19 +119,23 @@ body {
 
 .pajarito {
   display: flex;
-
+  color: red;
   align-self: flex-start;
+  margin-top: 70px;
+  margin-bottom: 10px;
 }
 .main h1,
 .pajarito {
   font-weight: bold;
   display: inline-flex;
   flex-direction: column;
-  margin: 50px 50px auto 50px;
+  font-size: 30px;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 .boton {
-  margin-top: 15px;
+  margin-top: 5px;
   color: #71c9f8;
   border: 1px #1da1f2 solid;
   outline: none;
@@ -133,16 +146,17 @@ body {
   padding: 0 16px;
 
   &.boton-primario {
-      background-color: #1da1f2;
-      color: white;
+    background-color: #1da1f2;
+    margin-bottom: 10px;
+    color: white;
   }
 }
 
-
 .link {
-    text-decoration: none;
-    line-height: 40px;
-    text-align: center;
+  text-decoration: none;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
 }
 .izq {
   margin-top: 40px;
@@ -151,22 +165,22 @@ body {
   align-items: center;
 
   img {
-      margin-right: 20px;
+    margin-right: 20px;
   }
 }
 .derecha {
-  color: aliceblue;
-  background-color: #15202b;
+  color: black;
+  background-color: white;
   padding: 20px;
   width: 50%;
 }
 
 .pie {
   text-align: center;
-  background-color: #15202b;
-  color: white;
+  background-color: white;
+  color: grey;
   padding: 20px;
-  font-size: 0.7rem;
+  font-size: 10px;
 }
 .pie a {
   margin: 2px;
@@ -175,14 +189,19 @@ body {
   color: #8899a6;
 }
 .pie a:hover {
-  color: white;
+  color: #1da1f2;
 }
 .contraseña a:hover {
-  color: white;
-}
-.olvidala {
   color: #8899a6;
 }
+.olvidala {
+  color: #1da1f2;
+}
 .regis {
-  background-color: #1da1f2;
+  background-color: #8899a6;
+}
+
+.letra {
+  display: flex;
+  font-size: 30px;
 }
