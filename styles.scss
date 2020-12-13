@@ -35,6 +35,7 @@ body {
   margin: 0;
   padding: 0;
 
+
   .caja {
     .input {
       border-radius: 2px;
@@ -204,4 +205,11 @@ body {
 .letra {
   display: flex;
   font-size: 30px;
+}
+.warning{
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: red;
+  padding-top:20px ;
 }
